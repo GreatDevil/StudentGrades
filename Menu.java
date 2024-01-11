@@ -5,7 +5,8 @@ public enum Menu {
     B("b. Удалите ученика", "введите имя", Journal::removeStudent),
     C("c. Обновите оценку ученика", "введите имя ученика и оценку через пробел", Journal::updateGrade),
     D("d. Просмотр оценок всех учащихся", "нажмите ввод для просмотра", Journal::showAllGrades),
-    E("e. Просмотр оценок конкретного учащегося", "введите имя", Journal::showStudentGrades);
+    E("e. Просмотр оценок конкретного учащегося", "введите имя", Journal::showStudentGrades),
+    X("x. сохранить", "введите название файла", FileWorker::save);
 
     public final String describe;
     public final String answer;

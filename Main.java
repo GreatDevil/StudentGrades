@@ -2,6 +2,12 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Загрузить файл? : yes or no");
+        String answer = System.console().readLine();
+        if("yes".equals(answer)) {
+            System.out.println("введите имя файла");
+            System.out.println(FileWorker.read(System.console().readLine()));
+        }
         handler(showMenu());
     }
 

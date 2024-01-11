@@ -4,6 +4,10 @@ import java.util.Map;
 
 public class Journal {
     private static Map<String, Student> studentMap = new HashMap<>();
+
+    public static Map<String, Student> getStudentMap() {
+        return studentMap;
+    }
     public static String addStudent(String studentName) {
         if (!studentName.isEmpty()) {
             if (studentMap.containsKey(studentName)) {

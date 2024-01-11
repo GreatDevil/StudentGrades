@@ -4,6 +4,14 @@ public class Student {
     private String name;
     private List<Byte> grades;
 
+    public Student() {
+    }
+
+    public Student(String name, List<Byte> grades) {
+        this.name = name;
+        this.grades = grades;
+    }
+
     public String getName() {
         return name;
     }
